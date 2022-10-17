@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!---------------------------------------bootstrap link----------------------------------------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-----------------------------------------------css link--------------------------------------------->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+<!---------------------------------------font awosome link----------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!---------------------------------------body----------------------------------------->
+<body data-spy="scroll" data-target=".navbar-a" data-offset="50">
+ <div class="container-fluid">
+   
+   <!-----------------------------Navbar---------------------------->
+   <div class="row">
+   <nav class="nav navbar-inverse">
+  	   <div class=" navbar-header col-md-9 col-sm-8 col-xs-5">
+		<div class="navbar-brand"><a href="#">Road Travel</a></div>
+	   </div>
+       <ol class="nav navbar-nav navbar-right col-md-3 col-sm-4 col-xs-7">
+          <li><a href="#"><i id="navbar-right-icon" class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="navbar-right-icon" class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="navbar-right-icon" class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="navbar-right-icon" class="fa fa-twitter" aria-hidden="true"></i></a></li>
+       	</ol>
+    </nav>
+</div>
+
+<div class="row">
+  <nav class="navbar navbar-a">
+	
+	<div class="navbar-header col-md-3">
+     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">SHOW MENU
+          <i class="fa fa-bars trans_200"></i>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+	     <ul class="nav navbar-nav">
+		   <li class="active"><a href="#myCarousel">Home</a></li>
+		   <li><a href="#about">About</a></li>
+		   <li><a href="#service">Service</a></li>
+		   <li><a href="#team">Team</a></li>
+		   <li class="dropdown"><a href="#dropdown" dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+		      <ul class="dropdown-menu">
+    	        <li><a href="#">menu 1</a></li>
+    	        <li><a href="#">menu 2</a></li>
+    	   	    <li><a href="#">menu 3</a></li>
+    	        <li><a href="#">menu 4</a></li>
+    	      </ul>
+    	   </li>
+		   <li><a href="#testimonial">Testimonials</a></li>
+           <li><a href="#contact">Contact</a></li>
+	   </ul>
+	</div>
+  </nav>
+</div>
+
+    <!--------------------------------------carousel------------------------------------------>
+ <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+ 
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" ></li>
+     </ol>
+       
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="1.jpg" alt="Los Angeles">
+        <div class="carousel-caption">Feel the magic
+        	<p  id="carousel-item-p">About the roadway</p>
+        	
+        	<div class="col-md-3 col-sm-3 " id="carousel-item-div"><i class="fa fa-bus" aria-hidden="true"  id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>
+        	
+        	<div class=" col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3" id="carousel-item-div"><i class="fa fa-ship" aria-hidden="true" id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>
+        	
+        	<div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 " id="carousel-item-div"><i class="fa fa-plane" aria-hidden="true" id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>   
+      </div>
+    </div>
+      
+    
+      <div class="item">
+        <img src="3.jpg" alt="New York" >
+        <div class="carousel-caption">Feel the magic
+        	<p  id="carousel-item-p">About the roadway</p>
+        	
+        	<div class="col-md-3 col-sm-3" id="carousel-item-div"><i class="fa fa-bus" aria-hidden="true"  id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>
+        	
+        	<div class=" col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3" id="carousel-item-div"><i class="fa fa-ship" aria-hidden="true" id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>
+        	
+        	<div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3" id="carousel-item-div"><i class="fa fa-plane" aria-hidden="true" id="carousel-item-div-i"></i><br>Travel makes one modest. You see what a tiny place you occupy in the world.</div>   	
+       </div>
+      </div>
+ </div>
+ <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+	</div>
+ 
+<!---------------------------------------------- about---------------------------------------->
+<div class="row" id="about">
+	<h1 class="about-h1">About Us</h1>
+	<hr class="about-hr">
+	<div class="col-md-offset-1 col-md-4 col-sm-offset-3 col-sm-8"><img class="about-img" src="about.jpg" alt="Paris"></div>
+	<div class=" col-md-offset-1 col-md-5 col-sm-offset-2 col-sm-8">
+		<p class="about-p1">Welcome to feel magic</p>
+		<p class="about-p2">Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+		<p class="about-p3">
+		France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.</p>
+		<p class="about-p4">
+	    Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.</p>
+	    <button type="button" class="btn about-btn1">Read More</button>
+	    <button type="button" class=" btn btn-warning about-btn2">Contact Us</button>
+	</div>
+ </div>
+
+<!----------------------------------------------services--------------------------------------------->
+<div class="row" id="service">
+	<h1 class="service-h1">Services</h1>
+	<hr class="service-hr">
+    <div class="container">
+      <div class="col-md-3">
+  		<h2 class="service-h2">Road Travel</h2>
+  		<p class="service-p1">
+  			The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. 
+  		</p>
+  		<button type="button" class=" btn btn-warning">Know More</button>
+  	  </div>
+
+      <div class="col-md-3 col-sm-6">
+    	<div><i class="fa fa-cube" aria-hidden="true" id="service-i1"></i> <span class="service-span1">ACCOMODATION</p>
+    	</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+
+  		<div><i class="fa fa-crosshairs" aria-hidden="true" id="service-i1"></i> <span class="service-span1">BEAT LOCATION</p>
+  		</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+  	  </div>
+
+
+  	  <div class="col-md-3 col-sm-6">
+  		<div><i class="fa fa-truck" aria-hidden="true" id="service-i1"></i> <span class="service-span1">TRANSPORT</p>
+    	</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+
+  		<div><i class="fa fa-money" aria-hidden="true" id="service-i1"></i> <span class="service-span1">INSURANCE</p>
+  		</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+  	  </div>
+
+  	  <div class="col-md-3 service-div">
+  		<div class="service-div1"><i class="fa fa-male" aria-hidden="true" id="service-i1"></i> <span class="service-span1">TRAVEL GUIDE</p>
+    	</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+
+  		<div ><i class="fa fa-bus" aria-hidden="true" id="service-i1"></i> <span class="service-span1">SAFE TRIP</p>
+  		</span><p class="service-p2">The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history</p></div>
+  	  </div>
+  </div>
+</div>
+		
+<!----------------------------------------------Guide--------------------------------------------->
+<div class="row" id="team">
+	<h1 class="guide-h1">Our Travel Guide</h1>
+	<hr class="guide-hr">
+    <div class="container">
+    	<div class="col-md-3 col-sm-6 col-xs-10""><img src="guide1.jpg" alt="Guide" class="guide-img">
+    		<h3 class="guide-h3">Michael</h3>
+            <p class="guide-p">General manager</p>
+    	</div>
+    	<div class="col-md-3 col-sm-6 col-xs-10""><img src="guide2.jpg" alt="Guide" class="guide-img">
+			<h3 class="guide-h3">jessica</h3>
+            <p class="guide-p">General manager</p>
+    	</div>
+    	<div class="col-md-3 col-sm-6 col-xs-10""><img src="guide3.jpg" alt="Guide" class="guide-img">
+    	    <h3 class="guide-h3">Roman</h3>
+            <p class="guide-p">Ass. manager</p>
+        </div>
+    	<div class="col-md-3 col-sm-6 col-xs-10"><img src="guide4.jpg" alt="Guide" class="guide-img">
+    	    <h3 class="guide-h3">Rosy</h3>
+            <p class="guide-p">Ass. manager</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------------------------------------------package--------------------------------------------->
+ <div class="row">
+	<h1 class="package-h1">Popular Packages</h1>
+	<hr class="package-hr">
+	<div class="container">
+	<div>
+		<div class="col-md-6 col-sm-6 package-abc">
+			<img src="package1.jpg" alt="" class="package-img">
+		</div>
+		<div class=" col-md-6 col-sm-6 package-abc">
+			<div class="package-div1">
+    		<h2 class="package-h2">Burj Khalifa</h2>
+    		<h3 class="package-h3" >Starts From $120</h3>
+    		<p class="package-p1">The Burj Khalifa, known as the Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai,United Arab Emirates. With a total height of 829.8 m & roof height of 828 m.</p>
+    		<button type="button" class="btn package-btn">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    	</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="col-md-6 col-sm-6 package-abc">
+			<div class="package-div2">
+    		<h2 class="package-h2">Statue of Liberty</h2>
+    		<h3 class="package-h3" >Starts From $150</h3>
+    		<p class="package-p2">The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. a gift from the people of France to the people.</p>
+    		<button type="button" class="btn package-btn">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+		</div>
+		<div class="col-md-6 col-sm-6 package-abc">
+			<img src="package2.jpg" alt="" class="package-img">
+		</div>
+	</div>
+
+	<div>
+		<div class="col-md-6 col-sm-6 package-abc">
+			<img src="package3.jpg" alt="" class="package-img">
+		</div>
+		<div class="col-md-6 col-sm-6 package-abc">
+			<div class="package-div3">
+    		<h2 class="package-h2">England Clock Tower</h2>
+    		<h3 class="package-h3" >Starts From $140</h3>
+    		<p class="package-p3">Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower.</p>
+    		<button type="button" class="btn package-btn">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    	</div>
+		</div>
+	</div>
+   </div>
+ </div>
+
+<!----------------------------------------------testimonial--------------------------------------------->
+<div class="row" id="testimonial">
+   <div class="container-fluid">
+	<h1 class="testimonial-h1">Testimonials</h1>
+	<hr class="testimonial-hr">
+	  <div class="col-md-offset-1 col-md-3 col-sm-4"><img src="guide4.jpg" alt="traveller" class="testimonial-img"></div>
+	  <div class="col-md-8 col-sm-8">
+	  	<h2 class="testimonial-h2">Jenny</h2>
+	  	<h4 class="testimonial-h4">Recent Tranveller</h4>
+	    <p class="testimonial-p1">Travel makes one modest. You see what a tiny place you occupy in the world.Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+	  	<p>
+	  	  <i class="fa fa-star" aria-hidden="true" id="testimonial-i"></i>
+	  	  <i class="fa fa-star" aria-hidden="true" id="testimonial-i"></i>
+	  	  <i class="fa fa-star" aria-hidden="true" id="testimonial-i"></i>
+	  	  <i class="fa fa-star" aria-hidden="true" id="testimonial-i"></i>
+	  	  <i class="fa fa-star" aria-hidden="true" id="testimonial-i"></i>
+	  	</p>
+	  </div>
+    </div>
+</div>
+<!--------------------------------------trip---------------------------------------->
+<div class="row">
+  <div class="container">
+	<h1 class="trip-h1">Recent Trips</h1>
+	<hr class="trip-hr">
+	<div class="col-md-4 trip-bg1">
+		<p><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i></p>
+		<p class="trip-p2">LONDON</p>
+		<p><span class="trip-sp1">130</span><span class="trip-sp2">HOTELS</span><span class="trip-sp3">|</span><span class="trip-sp1">30</span><span class="trip-sp2">CITES</span><span class="trip-sp3">|</span><span class="trip-sp1">13</span><span class="trip-sp2">TOURS</span></p>
+		<p class="trip-p4">Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+	</div>
+
+	<div class="col-md-4 trip-bg2">
+		<p><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i></p>
+		<p class="trip-p2">SWITZERLAND</p>
+		<p><span class="trip-sp1">130</span><span class="trip-sp2">HOTELS</span><span class="trip-sp3">|</span><span class="trip-sp1">30</span><span class="trip-sp2">CITES</span><span class="trip-sp3">|</span><span class="trip-sp1">13</span><span class="trip-sp2">TOURS</span></p>
+		<p class="trip-p4">Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+	</div>
+
+	<div class="col-md-4 trip-bg3">
+		<p><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i><i class="fa fa-star" aria-hidden="true" id="trip-i"></i></p>
+		<p class="trip-p2">PARIS</p>
+		<p><span class="trip-sp1">130</span><span class="trip-sp2">HOTELS</span><span class="trip-sp3">|</span><span class="trip-sp1">30</span><span class="trip-sp2">CITES</span><span class="trip-sp3">|</span><span class="trip-sp1">13</span><span class="trip-sp2">TOURS</span></p>
+		<p class="trip-p4">Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+	</div>
+  </div>
+</div>
+<!----------------------------------------------contact--------------------------------------------->
+<div class="row" id="contact">
+   <div class="container">
+	<h1 class="contact-h1">Contact Us</h1>
+	<hr class="contact-hr">
+	<div class="col-md-7">
+		<div class="form">
+		  <div class="form-vertical">
+		  	<div class="form-group ">
+			<input type="text" placeholder="Name" class="col-md-12  contact-input">
+		   </div>
+			<div class="form-group">
+			<input type="text" placeholder="Email" class="col-md-12 contact-input">
+		   </div>
+		   <div class="form-group">
+			<input type="text" placeholder="Phone No" class="col-md-12  contact-input">
+		   </div>
+		   <div class="form-group">
+			<textarea  placeholder="Enter Your Message" class="col-md-12 contact-input1"></textarea>
+		   </div>
+		   <button type="button" class="btn btn-success contact-btn">SUBMIT</button>
+		  </div>
+		</div>
+	</div>
+
+	<div class="col-md-5 contact-a">
+		<div class="contact-a1">
+		 <h4>Addess :</h4>
+		  <p><i class="fa fa-home" aria-hidden="true" id="contact-i"></i> 123, opp main builging.</p>
+			</div><br>
+			<div class="contact-a1">
+		<h4>Phone No :</h4>
+		  <p><i class="fa fa-phone" aria-hidden="true" id="contact-i"></i> +91 123456789</p>
+		  <p><i class="fa fa-mobile" aria-hidden="true" id="contact-i"></i> +91 987654321</p>
+			</div>
+			<br>
+			<div class="contact-a1">
+		<h4>Emails :</h4>
+		  <p><i class="fa fa-envelope" aria-hidden="true" id="contact-i"></i> new@example.com</p>
+		  <p><i class="fa fa-globe" aria-hidden="true" id="contact-i"></i> website@example.com</p>
+	</div>
+</div>
+</div>
+</div>
+<div class="container-fluid contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12101.225545940446!2d-74.0445004!3d40.6892494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40c6a5770d25022b!2sStatue+of+Liberty+National+Monument!5e0!3m2!1sen!2sin!4v1539017542091" width="100%" height="450" frameborder="0" allowfullscreen class="contact-iframe"></iframe></div>
+</div>
+
+<!--------------------------------------news---------------------------------------->
+<div class="row news">
+   <div class="container">
+	<h1 class="news-h1">Subscribe To Our Newsletter</h1>
+	<hr class="news-hr">
+	<div class="news-input col-md-offset-2 col-md-7">
+		<p class="news-input-p">Enter your Email Addess...</p>
+	    <button type="button" class="btn btn-warning news-btn"> <span class="badge badge-warning">Subscribe</span></button>
+	</div>
+</div>
+</div>
+	
+<!--------------------------------------footer---------------------------------------->
+<div class="row footer">
+	<div class="container">
+		<div class="col-md-3 col-sm-6 footer-div1">
+			<h3 class="footer-h3">About Us</h3>
+			<p class="footer-p1">Travel makes one modest. You see what a tiny place you occupy in the world.Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.Enjoy every holidays with us.It's safe and simplest way to enjoy your vacation.</p>
+			<a href="#" class="footer-a">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+
+		<div class="col-md-2 col-sm-5 footer-div2">
+		  <h3 class="footer-h3">Contact Us</h3>
+		  <p class="footer-p2"><i class="fa fa-phone" aria-hidden="true" id="footer-i"></i> +91 123456789</p>
+		  <p class="footer-p2"><i class="fa fa-mobile" aria-hidden="true" id="footer-i"></i> +91 987654321</p>
+		  <p class="footer-p2"><i class="fa fa-envelope" aria-hidden="true" id="footer-i"></i> new@example.com</p>
+		  <p class="footer-p2"><i class="fa fa-globe" aria-hidden="true" id="footer-i"></i> web@example.com</p>
+		  </div>
+
+		<div class="col-md-2 col-sm-6 footer-div3">
+			<h3 class="footer-h3">Quick Links</h3>
+			 <ul>
+   				<li><a href="#myCarousel">Home</a></li>
+   				<li><a href="#about">About</a></li>
+   				<li><a href="#service">Service</a></li>
+   				<li><a href="#team">Team</a></li>
+   				<li><a href="#testimonial">Testimonials</a></li>
+   				<li><a href="#contact">Contact</a></li>
+ 			 </ul>
+		</div>
+
+		<div class="col-md-4 col-sm-5">
+			<h3 class="footer-h3">Latest tweets</h3>
+			<span><i class="fa fa-twitter-square" aria-hidden="true" id="footer-i1"></i></span> <span class="footer-span2">@exapmle travel to england.http/example.com<br>http/example.com</span>
+			<br><br>
+
+			<span><i class="fa fa-twitter-square" aria-hidden="true" id="footer-i1"></i></span> <span class="footer-span2">@exapmle travel to england.http/example.com<br>http/example.com</span>
+		</div>
+	</div>
+	<hr class="footer-hr">
+	<div class="footer-last">
+		<p class="col-md-offset-2 col-md-5 col-sm-8  footer-last-p1"><i class="fa fa-copyright" aria-hidden="true" id="footer-i2"></i> 2018. Travel All rights  Reserved.|Designed by ABC.
+		</p>
+		<p class="col-md-offset-2 col-md-2 col-sm-3  footer-last-p2">
+		  <i id="footer-i3" class="fa fa-facebook" aria-hidden="true"></i>
+          <i id="footer-i3" class="fa fa-instagram" aria-hidden="true"></i>
+          <i id="footer-i3" class="fa fa-linkedin" aria-hidden="true"></i>
+          <i id="footer-i3" class="fa fa-twitter" aria-hidden="true"></i>	
+        </p>
+	</div>
+
+
+</div>
+</div>
+</body>
+</html>
+
